@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="b2b.css">
+
+        <title>B2Brain Dashboard</title>
+    </head>
+    <body>
+        <section class="content_left" >
+            <header class ="logo"><img src="resources\B2Brain.png"> <span> B2Brain </span></header>
+            <div class="sidebar">
+                <ul>
+                    <li><button type="button"><img alt="dashboard icon" src="resources\home.png"><span id="dashboard">Dashboard</span></button></li>
+                    <li><button type="button"><img alt="intels icon" src="resources\star.png"><span id="intels">Intels</span><div class="alert">4 unread</div></button></li>
+                    <li><button type="button"><img alt="leads icon" src="resources\user.png"><span id="leads">Leads</span><div class="alert">4 unseen</div></button></li>
+                    <li class="checkbox one"><input type="checkbox" id="accounts" checked>
+                        <label for="accounts"><img alt="accounts icon" src="resources\building.png"><span>Accounts</span><img class="drop-icon" src="resources\chevron-up.png"></label>
+                        <ul class="sub-list">
+                            <li><button type="button">Manage all</button></li>
+                            <li><button type="button">Track new accounts</button></li>
+                            <li><button type="button">Bulk imports</button></li>
+                        </ul>
+                    </li>
+                    <li class="checkbox two"><input type="checkbox" id="preferences">
+                        <label for="preferences"><img alt="preferences icon" src="resources\cog.png"><span>Preferences</span><img class="drop-icon" src="resources\chevron-up.png"></label>
+                        <ul class="sub-list">
+                            <li><button type="button">Product Focus</button></li>
+                            <li><button type="button">Intel Prefernces</button></li>
+                            <li><button type="button">Lead Persona</button></li>
+                        </ul>
+                    </li>
+                    <li><button type="button"><img alt="integration icon" src="resources\link.png"><span id="integrations">Integrations</span></button></li>
+                    <li><button type="button"><img alt="team icon" src="resources\users.png"><span id="team">Team</span></button></li>
+                    <li><button type="button"><img alt="help/support icon" src="resources\comments-alt.png"><span id="help/support">Help/Support</span></button></li>
+                </ul>
+            </div>
+        </section>
+        <section class="content_right">
+            <nav>
+                <div class="search-box">
+                    <img class="search-close hidden" src="resources\times.png">
+                   <label for="search"><img class="search-icon" src="resources\search.png"></label>
+                   <form action="abc.com"> 
+                       <input type="text" class="search-input" name="searchBar" id="searchBar" placeholder="Search by account name or website">
+                    </form>
+                </div>
+                    <ul class="notification">
+                        <li><button class="btn" type="button"><img src="resources\bell.png"></button></li>
+                        <div class="alert"></div>
+                        <li><button type="button"><img src="resources\logo.png"></button></li>
+                    </ul>
+                </nav>
+                <div class="search-result hidden">
+                    <div class="accounts">
+                      <p> Similar accounts</p>
+                      <div class="accountsContainer">
+                        <ul id="accountsList">
+                            
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="actions">
+                        <p>Quick actions</p>
+                        <ul>
+
+                            <li><button type="button">Track new account</button></li>
+                            <li><button type="button">Bulk track accounts</button></li>
+                            <li><button type="button">Manage accounts</button></li>
+                        </ul>
+                    </div>                       
+                </div>
+                <div class="main-body">
+                    <img  alt="image of offer" src="resources\hero-imagehero.png">
+                    <img  alt="trusted companies names" src="resources\Screenshot 2022-07-01 at 1.46.png">
+                    <img  alt="customer review" src="resources\Screenshot 2022-07-01 at 1.46 (1).png">
+                </div>
+        </section>
+        <script src="b2b.js"></script>
+    </body>
+    
+</html>
