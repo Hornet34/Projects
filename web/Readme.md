@@ -1,2 +1,2 @@
-This is a simple HTML CSS project.
-Its a responsive web page with hover effects on buttons.
+This are all Web based project.
+#Web Development
